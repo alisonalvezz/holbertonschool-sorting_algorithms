@@ -33,7 +33,7 @@ The time complexity is:
 - **Best Case:** O(n)
 - **Average Case:** O(n^2)
 - **Worst Case:** O(n^2)
-*Note: This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.*
+#### *Note: This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.*
 
 ### Insertion Sort
 ![Insertion sort](https://www.lavivienpost.net/wp-content/uploads/2022/01/insertion-600.gif)

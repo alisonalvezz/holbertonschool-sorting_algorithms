@@ -29,7 +29,7 @@ In bubble sort, we:
 - This process is then continued to find the second largest and place it and so on until the data is sorted.
 #### Time complexity of Bubble Sort:
 The time complexity is O(n^2)
-*Note:* This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
+- *Note:* This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
 
 ### Insertion Sort
 Insertion sort is a simple sorting algorithm that works by iteratively inserting each element of an unsorted list into its correct position in a sorted portion of the list.
@@ -40,7 +40,12 @@ In insertion sort, we:
 - Continue this process, comparing each element with the ones before it.
 - Repeat until the entire array is sorted.
 #### Time complexity of Insertion Sort:
-**Best Case:** O(n), if the list is already sorted, where n is the number of elements in the list.
-**Average Case:** O(n^2), if the list is randomly ordered.
-**Worst Case:** O(n^2), if the list is in reverse order.
+- **Best Case:** O(n), if the list is already sorted, where n is the number of elements in the list.
+- **Average Case:** O(n^2), if the list is randomly ordered.
+- **Worst Case:** O(n^2), if the list is in reverse order.
 
+### Selection Sort
+![Selection sort](https://pin.it/7myPNTLte)
+Selection sort is a simple and efficient sorting algorithm that works by repeatedly selecting the smallest (or largest) element of the unsorted portion of the list and swaps it with the first element of the unsorted part.
+This process is repeated for the remaining unsorted portion until the entire list is sorted.
+#### Time complexity of Insertion Sort

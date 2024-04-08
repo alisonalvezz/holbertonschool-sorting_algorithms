@@ -33,7 +33,7 @@ The time complexity is O(n^2)
 - *Note:* This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
 
 ### Insertion Sort
-![Insertion sort]([https://www.lavivienpost.net/wp-content/uploads/2022/01/insertion-600.gif)
+![Insertion sort](https://www.lavivienpost.net/wp-content/uploads/2022/01/insertion-600.gif)
 - Insertion sort is a simple sorting algorithm that works by iteratively inserting each element of an unsorted list into its correct position in a sorted portion of the list.
 In insertion sort, we:
 - Start with the second element of the array (as first element in the array is assumed to be sorted)
@@ -59,6 +59,6 @@ This process is repeated for the remaining unsorted portion until the entire lis
 The key process in Quick sort is a partition. The target of partitions is positioning the pivot in its correct position in the array, and put all smaller elements at the left of the pivot and bigger at the right of the pivot.
 Partition is done recursively on each side of the pivot after the pivot is placed in its correct position and this finally sorts the array.
 #### Time complexity of Quick Sort
-**Best case:** O(nlog(n)), when the pivot chosen at each step divides the array into roughly equal halves. The algorithm will be making balanced partitions, making efficient sorting.
-**Average case:** O(nlog(n))
-**Worst case:** O(n^2), when the pivot at each step consistenly results in highly unbalanced positions.
+- **Best case:** O(nlog(n)), when the pivot chosen at each step divides the array into roughly equal halves. The algorithm will be making balanced partitions, making efficient sorting.
+- **Average case:** O(nlog(n))
+- **Worst case:** O(n^2), when the pivot at each step consistenly results in highly unbalanced positions.

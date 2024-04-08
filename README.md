@@ -88,7 +88,7 @@ Partition is done recursively on each side of the pivot after the pivot is place
 void bubble_sort(int *array, size_t size);
 ```
 In this task we have to write a function that sorts an array of integers in ascending order using the *Bubble Sort* algorithm.
-We have writed in the file [0-O)(https://github.com/alisonalvezz/holbertonschool-sorting_algorithms/blob/main/0-O) the Big O notations of the time complexity of *Bubble Sort* with one notation per line. 
+We have writed in the file [0-O](https://github.com/alisonalvezz/holbertonschool-sorting_algorithms/blob/main/0-O) the Big O notations of the time complexity of *Bubble Sort* with one notation per line. 
 - Best case O(n)
 - Average Case O(n^2)
 - Worst Case O(n^2)

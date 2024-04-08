@@ -29,7 +29,10 @@ In bubble sort, we:
 - The largest element is moved to the rightmost end at first.
 - This process is then continued to find the second largest and place it and so on until the data is sorted.
 #### Time complexity of Bubble Sort:
-The time complexity is O(n^2)
+The time complexity is:
+-**Best Case:** O(n)
+- **Average Case:** O(n^2)
+- **Worst Case:** O(n^2)
 - *Note:* This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
 
 ### Insertion Sort
@@ -62,3 +65,30 @@ Partition is done recursively on each side of the pivot after the pivot is place
 - **Best case:** O(nlog(n)), when the pivot chosen at each step divides the array into roughly equal halves. The algorithm will be making balanced partitions, making efficient sorting.
 - **Average case:** O(nlog(n))
 - **Worst case:** O(n^2), when the pivot at each step consistenly results in highly unbalanced positions.
+
+## Big O
+### What is "Big O"?
+*Big O* is a mathematical concept used to describe the limiting behavior of a function and its argument approaches a specific value or infinity. It's relevant for analyzing the efficiency of algorithms.
+#### Key points:
+- **Purpose:** *Big O* notation helps classify algorithms based on how their runtime or space requirements grow as the input size increases.
+- **Symbol:** The letter 'O' stands for Ordnung, which means Order of Approximation
+#### We can say that Big O notation is a relative representation of the complexity of an algorithm.
+
+## Learning objectives of this project:
+- At least four different sorting algorithms
+- What is the Big O notation, and how to evaluate the time complexity of an algorithm
+- How to select the best sorting algorithm for a given input
+- What is a stable sorting algorithm
+
+### In the mandatory part of this project, we only worked with Bubble Sort, Insertion Sort, Selection Sort and Quick Sort
+
+## First task: Bubble Sort
+#### Prototype:
+```
+void bubble_sort(int *array, size_t size);
+```
+In this task we have to write a function that sorts an array of integers in ascending order using the *Bubble Sort* algorithm.
+We have writed in the file [0-O)(https://github.com/alisonalvezz/holbertonschool-sorting_algorithms/blob/main/0-O) the Big O notations of the time complexity of *Bubble Sort* with one notation per line. 
+- Best case O(n)
+- Average Case O(n^2)
+- Worst Case O(n^2)

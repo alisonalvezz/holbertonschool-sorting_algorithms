@@ -22,7 +22,8 @@ A sorting algorithm is used to rearrange a given array or list of elements accor
 ## Types of Sorting Algorithms
 **Here we are going to explain the sorting algorithms that we used in our project**
 ### Bubble Sort
-Bubble sort is the simplest *sorting algorithm* that works repeatedly swapping the adjacents elements if they are in wrong order.
+![Bubble sort](https://www.lavivienpost.net/wp-content/uploads/2022/01/bubble-640.gif)
+- Bubble sort is the simplest *sorting algorithm* that works repeatedly swapping the adjacents elements if they are in wrong order.
 In bubble sort, we:
 - Traverse from left and compare adjacent elements and the higher one is placed at the right side.
 - The largest element is moved to the rightmost end at first.
@@ -32,7 +33,8 @@ The time complexity is O(n^2)
 - *Note:* This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
 
 ### Insertion Sort
-Insertion sort is a simple sorting algorithm that works by iteratively inserting each element of an unsorted list into its correct position in a sorted portion of the list.
+![Insertion sort](https://www.lavivienpost.net/wp-content/uploads/2022/01/insertion-600.gif)
+- Insertion sort is a simple sorting algorithm that works by iteratively inserting each element of an unsorted list into its correct position in a sorted portion of the list.
 In insertion sort, we:
 - Start with the second element of the array (as first element in the array is assumed to be sorted)
 - Compare the second element with the first element and check if the second element is smaller, then swap them.
@@ -45,7 +47,18 @@ In insertion sort, we:
 - **Worst Case:** O(n^2), if the list is in reverse order.
 
 ### Selection Sort
-![Selection sort](https://www.learnex.it/imgs/C/algoritmi_ordinamento/insertion_sort.gif)
-!Selection sort is a simple and efficient sorting algorithm that works by repeatedly selecting the smallest (or largest) element of the unsorted portion of the list and swaps it with the first element of the unsorted part.
+![Selection sort](https://www.lavivienpost.net/wp-content/uploads/2022/01/selection-600.gif)
+- Selection sort is a simple and efficient sorting algorithm that works by repeatedly selecting the smallest (or largest) element of the unsorted portion of the list and swaps it with the first element of the unsorted part.
 This process is repeated for the remaining unsorted portion until the entire list is sorted.
 #### Time complexity of Insertion Sort
+- O(n^2)
+
+### Quick Sort
+![Quick sort](https://www.lavivienpost.net/wp-content/uploads/2022/02/quicksort-600-1.gif)
+- Quick sort is a sorting algorithm based on the *Dvide and Conquer* algorithm that picks an element as a pivot and partitions the given array around the picked pivot by placing the pivot in its correct position in the sorted array.
+The key process in Quick sort is a partition. The target of partitions is positioning the pivot in its correct position in the array, and put all smaller elements at the left of the pivot and bigger at the right of the pivot.
+Partition is done recursively on each side of the pivot after the pivot is placed in its correct position and this finally sorts the array.
+#### Time complexity of Quick Sort
+- **Best case:** O(nlog(n)), when the pivot chosen at each step divides the array into roughly equal halves. The algorithm will be making balanced partitions, making efficient sorting.
+- **Average case:** O(nlog(n))
+- **Worst case:** O(n^2), when the pivot at each step consistenly results in highly unbalanced positions.

@@ -23,7 +23,7 @@ A sorting algorithm is used to rearrange a given array or list of elements accor
 **Here we are going to explain the sorting algorithms that we used in our project**
 ### Bubble Sort
 ![Bubble sort](https://www.lavivienpost.net/wp-content/uploads/2022/01/bubble-640.gif)
-Bubble sort is the simplest *sorting algorithm* that works repeatedly swapping the adjacents elements if they are in wrong order.
+- Bubble sort is the simplest *sorting algorithm* that works repeatedly swapping the adjacents elements if they are in wrong order.
 In bubble sort, we:
 - Traverse from left and compare adjacent elements and the higher one is placed at the right side.
 - The largest element is moved to the rightmost end at first.

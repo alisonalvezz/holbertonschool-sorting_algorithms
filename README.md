@@ -46,6 +46,6 @@ In insertion sort, we:
 
 ### Selection Sort
 ![Selection sort](https://www.learnex.it/imgs/C/algoritmi_ordinamento/insertion_sort.gif)
-Selection sort is a simple and efficient sorting algorithm that works by repeatedly selecting the smallest (or largest) element of the unsorted portion of the list and swaps it with the first element of the unsorted part.
+!Selection sort is a simple and efficient sorting algorithm that works by repeatedly selecting the smallest (or largest) element of the unsorted portion of the list and swaps it with the first element of the unsorted part.
 This process is repeated for the remaining unsorted portion until the entire list is sorted.
 #### Time complexity of Insertion Sort

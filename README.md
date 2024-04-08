@@ -30,7 +30,7 @@ In bubble sort, we:
 - This process is then continued to find the second largest and place it and so on until the data is sorted.
 #### Time complexity of Bubble Sort:
 The time complexity is:
--**Best Case:** O(n)
+- **Best Case:** O(n)
 - **Average Case:** O(n^2)
 - **Worst Case:** O(n^2)
 - *Note:* This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.

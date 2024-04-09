@@ -13,7 +13,6 @@ void insertion_sort_list(listint_t **list)
 
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
-
 	current = (*list)->next;
 	temp = NULL;
 	next_node = NULL;
@@ -50,4 +49,5 @@ void insertion_sort_list(listint_t **list)
 		print_list(*list);
 		current = next_node;
 	}
+	print_list(*list);
 }

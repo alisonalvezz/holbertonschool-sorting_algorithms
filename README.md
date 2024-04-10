@@ -88,6 +88,7 @@ Partition is done recursively on each side of the pivot after the pivot is place
 void bubble_sort(int *array, size_t size);
 ```
 In this task we have to write a function that sorts an array of integers in ascending order using the *Bubble Sort* algorithm.
+It first checks if the array is valid (not NULL). Then, it iterates over the array using two nested loops to compare adjacent elements. If the element at index j is greater than the element at index j + 1, they are swapped. This process is repeated until the array is sorted. During each swap, the print_array function is called to display the array's current state. If the array is NULL, the function simply returns without performing any sorting.
 We have writed in the file [0-O](https://github.com/alisonalvezz/holbertonschool-sorting_algorithms/blob/main/0-O) the Big O notations of the time complexity of *Bubble Sort* with one notation per line. 
 - Best case O(n)
 - Average Case O(n^2)
@@ -99,6 +100,7 @@ We have writed in the file [0-O](https://github.com/alisonalvezz/holbertonschool
 void insertion_sort_list(listint_t **list);
 ```
 In this task we have to write a function that sorts a doubly linked list of integers using *Insertion sort* algorithm.
+It first checks if the list is valid (not NULL) and if it contains more than one element (not a single node or empty list). Then, it iterates through the list, starting from the second node. Within this loop, it continuously moves the current node backwards until it finds the correct position for insertion, swapping nodes as necessary to maintain the correct order. The print_list function is called to display the list after each swap. If the list is NULL, empty, or contains only one node, the function returns without performing any sorting.
 We have writed in the file [0-1](https://github.com/alisonalvezz/holbertonschool-sorting_algorithms/blob/main/1-O) the Big O notations of the time complexity of *Insertion Sort* with one notation per line.
 - Best case O(n)
 - Average case O(n^2)
@@ -110,6 +112,7 @@ We have writed in the file [0-1](https://github.com/alisonalvezz/holbertonschool
 void selection_sort(int *array, size_t size);
 ```
 In this task we have to write a function that sorts an array of integers in ascending order using *Selection sort* algorithm.
+It first checks if the array is valid (not NULL) and if its size is not zero. Then, it iterates through the array, finding the index of the minimum element starting from the current index. If a smaller element is found, it swaps it with the element at the current index. The print_array function is called to display the array after each swap. If the array is NULL or its size is zero, the function returns without performing any sorting.
 We have writed in the file [0-2](https://github.com/alisonalvezz/holbertonschool-sorting_algorithms/blob/main/2-O) the Big O notations of the time complexity of *Selection sort* with one notation per line.
 - Best case O(n^2)
 - Average case O(n^2)

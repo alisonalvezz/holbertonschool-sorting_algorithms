@@ -69,8 +69,25 @@ Partition is done recursively on each side of the pivot after the pivot is place
 ## Big O
 ### What is "Big O"?
 *Big O* is a mathematical concept used to describe the limiting behavior of a function and its argument approaches a specific value or infinity. It's relevant for analyzing the efficiency of algorithms.
+It represents the upper bound of the time or space complexity in the worst-case scenario as a function of the input size. In simpler terms, Big O notation tells us how the runtime or memory usage of an algorithm grows as the size of the input data increases.
+
+For example, if an algorithm has a time complexity of O(n), where n is the size of the input, it means that the runtime of the algorithm grows linearly with the size of the input. If the input size doubles, the runtime also doubles. Similarly, an algorithm with a time complexity of O(n^2) means that the runtime grows quadratically with the size of the input. As the input size doubles, the runtime quadruples.
+
+Big O notation helps us analyze and compare different algorithms to understand their efficiency and scalability. It allows us to make informed decisions when choosing algorithms for solving problems, especially when dealing with large datasets where efficiency becomes crucial.
+
 #### Key points:
-- **Purpose:** *Big O* notation helps classify algorithms based on how their runtime or space requirements grow as the input size increases.
+- **Performance Measurement:** *Big O* notation is a tool for analyzing and describing the performance or efficiency of algorithms.
+- **Worst-Case Scenario:** *Big O* notation typically represents the upper bound of the time or space complexity in the worst-case scenario. It tells us how the algorithm behaves when the input size approaches infinity.
+- **Simplified Analysis:** It abstracts away constant factors and lower-order terms, focusing on the dominant factor that influences the algorithm's performance as the input size grows.
+- **Types of Complexity:** Common *Big O* complexities include:
+#### O(1) - Constant time complexity.
+#### O(log n) - Logarithmic time complexity.
+#### O(n) - Linear time complexity.
+#### O(n log n) - Linearithmic time complexity.
+#### O(n^2), O(n^3), ... - Polynomial time complexity.
+#### O(2^n), O(n!) - Exponential time complexity.
+- **Comparing Algorithms:** *Big O* notation enables easy comparison of different algorithms to determine which one is more efficient for a given problem.
+- **Space Complexity:** *Big O* notation can also describe the space complexity of an algorithm, indicating how much memory it requires relative to the input size.
 - **Symbol:** The letter 'O' stands for Ordnung, which means Order of Approximation
 #### We can say that Big O notation is a relative representation of the complexity of an algorithm.
 

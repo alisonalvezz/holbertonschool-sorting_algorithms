@@ -82,7 +82,7 @@ Partition is done recursively on each side of the pivot after the pivot is place
 
 ### In the mandatory part of this project, we only worked with Bubble Sort, Insertion Sort, Selection Sort and Quick Sort
 
-## First task: Bubble Sort
+## First task: [Bubble Sort](https://github.com/alisonalvezz/holbertonschool-sorting_algorithms/blob/main/0-bubble_sort.c)
 #### Prototype:
 ```
 void bubble_sort(int *array, size_t size);
@@ -92,3 +92,57 @@ We have writed in the file [0-O](https://github.com/alisonalvezz/holbertonschool
 - Best case O(n)
 - Average Case O(n^2)
 - Worst Case O(n^2)
+
+## Second task: [Insertion Sort](https://github.com/alisonalvezz/holbertonschool-sorting_algorithms/blob/main/1-insertion_sort_list.c)
+#### Prototype:
+```
+void insertion_sort_list(listint_t **list);
+```
+In this task we have to write a function that sorts a doubly linked list of integers using *Insertion sort* algorithm.
+We have writed in the file [0-1](https://github.com/alisonalvezz/holbertonschool-sorting_algorithms/blob/main/1-O) the Big O notations of the time complexity of *Insertion Sort* with one notation per line.
+- Best case O(n)
+- Average case O(n^2)
+- Worst case O(n^2)
+
+## Third task: [Selection sort](https://github.com/alisonalvezz/holbertonschool-sorting_algorithms/blob/main/2-selection_sort.c)
+#### Prototype:
+```
+void selection_sort(int *array, size_t size);
+```
+In this task we have to write a function that sorts an array of integers in ascending order using *Selection sort* algorithm.
+We have writed in the file [0-2](https://github.com/alisonalvezz/holbertonschool-sorting_algorithms/blob/main/2-O) the Big O notations of the time complexity of *Selection sort* with one notation per line.
+- Best case O(n^2)
+- Average case O(n^2)
+- Worst case O(n^2)
+
+## Fourth task: [Quick sort](https://github.com/alisonalvezz/holbertonschool-sorting_algorithms/blob/main/3-quick_sort.c)
+#### Prototype:
+```
+void selection_sort(int *array, size_t size);
+```
+In this task we have to write a function that sorts an array of integers in ascending order using *Quick sort* algorithm.
+We used three auxiliar functions to make this possible:
+#### Swap:
+```
+void swap(int *a, int *b)
+```
+Swaps two integers ('a' and 'b') in an array
+
+#### Lomuto partititon:
+```
+int lomuto_partition(int *array, int low, int high, size_t size)
+```
+Makes lomuto partition scheme. It selects a pivot, then traverses the array, moving elements smaller than the pivot to the left and elements larger than the pivot to the right. Finally, it places the pivot in its correct position in the sorted array and 
+returns its index. Also prints the array at each swap step to visualize the sorting process.
+
+#### Quicksort (recursive)
+```
+void quicksort_recursive(int *array, int low, int high, size_t size)
+```
+This function implements the recursive quicksort algorithm to sort an array. It first checks if the low index is less than the high index, indicating there are elements to be sorted. Then, it performs Lomuto partitioning to select a pivot, and recursively calls itself for the left and right sub-arrays formed by the pivot. This process continues until all elements are sorted within the given range.
+
+#### Quick sort
+```
+void quick_sort(int *array, size_t size)
+```
+This function nitiates the quicksort process for an array. It first checks if the array is valid (not NULL) and if its size is greater than or equal to 2. If so, it calls the quicksort_recursive function to sort the entire array by passing the array, starting index 0, ending index size - 1, and the size of the array. If the array is NULL or its size is less than 2, the function simply returns without performing any sorting.

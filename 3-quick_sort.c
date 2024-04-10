@@ -74,7 +74,7 @@ void quicksort_recursive(int *array, int low, int high, size_t size)
 }
 
 /**
- * quicksort - calls quicksort to sort the array
+ * quick_sort - calls quicksort to sort the array
  * @array: pointer to the array to be sorted
  * @size: size of the array
  */
